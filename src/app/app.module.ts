@@ -2,7 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+// Components
 import { AppComponent } from './app.component';
+import { BotonesComponent } from './components/botones/botones.component';
+import { MensajesComponent } from './components/mensajes/mensajes.component';
+import { MediaComponent } from './components/media/media.component';
+import { OrganizacionInformacionComponent } from './components/organizacion-informacion/organizacion-informacion.component';
+import { OrganizacionTextoComponent } from './components/organizacion-texto/organizacion-texto.component';
+import { HomeComponent } from './components/home/home.component';
+import { ErrorComponent } from './components/error/error.component';
 //PrimeNg
 import { ButtonModule } from 'primeng/button';
 import { SplitButtonModule } from 'primeng/splitbutton';
@@ -14,13 +22,11 @@ import { InputTextModule } from 'primeng/inputtext';
 import { BadgeModule } from 'primeng/badge';
 import { AvatarModule } from 'primeng/avatar';
 import { RippleModule } from 'primeng/ripple';
-import { BotonesComponent } from './botones/botones.component';
-import { MensajesComponent } from './mensajes/mensajes.component';
-import { MediaComponent } from './media/media.component';
-import { OrganizacionInformacionComponent } from './organizacion-informacion/organizacion-informacion.component';
-import { OrganizacionTextoComponent } from './organizacion-texto/organizacion-texto.component';
-import { HomeComponent } from './home/home.component';
-import { ErrorComponent } from './error/error.component';
+import { ImageModule } from 'primeng/image';
+import { GalleriaModule } from 'primeng/galleria';
+import { CarouselModule } from 'primeng/carousel';
+import { TagModule } from 'primeng/tag';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +37,8 @@ import { ErrorComponent } from './error/error.component';
     OrganizacionInformacionComponent,
     OrganizacionTextoComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    CarruselComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +51,11 @@ import { ErrorComponent } from './error/error.component';
     InputTextModule,
     BadgeModule,
     AvatarModule,
-    RippleModule
+    RippleModule,
+    ImageModule,
+    GalleriaModule,
+    CarouselModule,
+    TagModule
 
   ],
   providers: [MessageService],

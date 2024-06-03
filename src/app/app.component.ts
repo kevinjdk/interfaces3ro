@@ -25,7 +25,18 @@ export class AppComponent implements OnInit {
       {
         label: 'Media',
         icon: 'pi pi-video',
-        routerLink: ['/media']
+        items: [
+          {
+            label: 'Galeria',
+            icon: 'pi pi-video',
+            routerLink: ['/media']
+          },
+          {
+            label: 'Carusel',
+            icon: 'pi pi-images',
+            routerLink: ['/carrusel']
+          }
+        ]
       },
       {
         label: 'Mensajes',

@@ -1,0 +1,45 @@
+<!-- <div class="card flex justify-content-center">
+    <p-image 
+        src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg"
+        alt="Image"
+        width="250">
+    </p-image>
+</div>
+<div class="card flex justify-content-center">
+    <p-image 
+        src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg"
+        alt="Image" 
+        width="250" 
+        [preview]="true">
+    </p-image>
+</div>
+<div class="card flex justify-content-center">
+    <p-image 
+        src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" 
+        [preview]="true" 
+        alt="Image" 
+        width="250">
+        <ng-template pTemplate="indicator">
+            <i class="pi pi-check"></i>
+        </ng-template>
+    </p-image>
+</div>
+<hr> -->
+
+<h2>Galeria con PrimeNg</h2>
+ <p-galleria 
+    [value]="images" 
+    (valueChange)="onImageChange($event)"
+    [responsiveOptions]="responsiveOptions" 
+    [containerStyle]="{ 'max-width': '640px' }" 
+    [numVisible]="5">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.itemImageSrc" style="width: 100%;" [alt]="item.alt" [title]="item.title" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="width: 100%;" />
+        </div>
+    </ng-template>
+</p-galleria> 
+<hr>
