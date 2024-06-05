@@ -11,6 +11,11 @@ import { OrganizacionInformacionComponent } from './components/organizacion-info
 import { OrganizacionTextoComponent } from './components/organizacion-texto/organizacion-texto.component';
 import { HomeComponent } from './components/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
+// Services
+import { MessageIService } from './services/message-i.service';
+import { PhotoService } from './services/photo.service';
+import { CarruselService } from './services/carrusel.service';
 //PrimeNg
 import { ButtonModule } from 'primeng/button';
 import { SplitButtonModule } from 'primeng/splitbutton';
@@ -26,7 +31,8 @@ import { ImageModule } from 'primeng/image';
 import { GalleriaModule } from 'primeng/galleria';
 import { CarouselModule } from 'primeng/carousel';
 import { TagModule } from 'primeng/tag';
-import { CarruselComponent } from './components/carrusel/carrusel.component';
+import { MessagesModule } from 'primeng/messages';
+
 
 @NgModule({
   declarations: [
@@ -55,10 +61,11 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
     ImageModule,
     GalleriaModule,
     CarouselModule,
-    TagModule
+    TagModule,
+    MessagesModule
 
   ],
-  providers: [MessageService],
+  providers: [MessageService,MessageIService,PhotoService,CarruselService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
