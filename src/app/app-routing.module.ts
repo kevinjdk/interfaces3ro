@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
+import { CardComponent } from './components/card/card.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, 
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'mensajes', component: MensajesComponent },
   { path: 'orginfo', component: OrganizacionInformacionComponent },
   { path: 'orgtext', component: OrganizacionTextoComponent },
+  { path: 'card', component: CardComponent },
   { path: '**', component: ErrorComponent }, 
 ];
 

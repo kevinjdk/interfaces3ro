@@ -16,6 +16,7 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
 import { MessageIService } from './services/message-i.service';
 import { PhotoService } from './services/photo.service';
 import { CarruselService } from './services/carrusel.service';
+import { CardComponent } from './components/card/card.component';
 //PrimeNg
 import { ButtonModule } from 'primeng/button';
 import { SplitButtonModule } from 'primeng/splitbutton';
@@ -32,6 +33,8 @@ import { GalleriaModule } from 'primeng/galleria';
 import { CarouselModule } from 'primeng/carousel';
 import { TagModule } from 'primeng/tag';
 import { MessagesModule } from 'primeng/messages';
+import { CardModule } from 'primeng/card';
+
 
 
 @NgModule({
@@ -44,7 +47,8 @@ import { MessagesModule } from 'primeng/messages';
     OrganizacionTextoComponent,
     HomeComponent,
     ErrorComponent,
-    CarruselComponent
+    CarruselComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +66,8 @@ import { MessagesModule } from 'primeng/messages';
     GalleriaModule,
     CarouselModule,
     TagModule,
-    MessagesModule
+    MessagesModule,
+    CardModule,
 
   ],
   providers: [MessageService,MessageIService,PhotoService,CarruselService],

@@ -46,7 +46,13 @@ export class AppComponent implements OnInit {
       {
         label: 'Organización de Información',
         icon: 'pi pi-sitemap',
-        routerLink: ['/orginfo']
+        items: [
+          {
+            label: 'Card',
+            icon: 'pi pi-id-card',
+            routerLink: ['/card']
+          }
+        ]
       },
       {
         label: 'Organización de Texto',
